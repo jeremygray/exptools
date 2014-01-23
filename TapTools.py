@@ -113,7 +113,7 @@ def test():
         t0 = time.time()
         svec = createRhythm(dvec1, avec, freq, play=True, fxn=fxn, filename=f+'.wav')
         print time.time() - t0
-        #plot(svec, label=repr(fxn))
+        plot(svec, label=repr(fxn))
 
 def plot(yaxis, label):
     pyplot.plot(range(len(yaxis)), yaxis)
